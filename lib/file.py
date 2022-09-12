@@ -35,3 +35,13 @@ def compare_hashes(h1: str, h2: str):
 
     return h1 == h2
 
+
+def compare_chunk_hashes(h1_chunks: str, h2_chunks: str):
+    '''
+    Compare a list of has values.
+
+    Returns list of Boolean
+    '''
+
+    comparison = [h1c == h2c for h1c, h2c in zip(h1_chunks, h2_chunks)]
+    return comparison
