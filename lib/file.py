@@ -25,3 +25,13 @@ def read_file_chunks(filename: str, chunk_size: int = 1024):
 
     return h.hexdigest(), h_chunks
 
+
+def compare_hashes(h1: str, h2: str):
+    '''
+    Compare two hash values.
+
+    Returns Boolean
+    '''
+
+    return h1 == h2
+
